@@ -75,4 +75,4 @@ jobs:
         with:
           tag_name: ${{ github.event.inputs.tag }}
           name: ${{ github.event.inputs.tag }}
-          body: ${{ needs.extract-changes.outputs.release_notes }}
+          body: ${{ needs.get-release-notes.outputs.release_notes }}
